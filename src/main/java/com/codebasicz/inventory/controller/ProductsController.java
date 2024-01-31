@@ -29,6 +29,7 @@ public class ProductsController {
                                     @RequestParam(value = "pageNo", defaultValue = "1") Integer pageNo,
                                     @RequestParam(value = "pageSize", defaultValue = "10") Integer pageSize) {
         System.out.print("test");
+        System.out.print("test1");
         Pageable pageable = PageRequest.of(pageNo - 1, pageSize);
         ModelAndView modelAndView = new ModelAndView("products/list");
         Page<Product> productPage = productsService.getProducts(search, pageable);
