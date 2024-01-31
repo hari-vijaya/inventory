@@ -9,6 +9,7 @@ public class HomeController {
 
     @GetMapping("/home")
     public ModelAndView saveLoanDetailsForm() {
+        System.out.print("hello");
         return new ModelAndView("home");
     }
 }
