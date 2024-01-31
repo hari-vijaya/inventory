@@ -31,7 +31,7 @@ public class ProductsController {
 
         System.out.print("test2");
         System.out.print("test");
-        System.out.print("test1");
+        System.out.print("test3");
         Pageable pageable = PageRequest.of(pageNo - 1, pageSize);
         ModelAndView modelAndView = new ModelAndView("products/list");
         Page<Product> productPage = productsService.getProducts(search, pageable);
